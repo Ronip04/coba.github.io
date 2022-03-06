@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Portfolio | Ronip</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="script.js" >
+    
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script src="dist/sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+</script>
+  </head>
+
+  <!-- Navbar  -->
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #022754 ;">
+    <div class="container">
+      <img src="img/logo ronip.png" class="logo" href="#home" style="padding-left: 1rem; height: 7vh; width: 23vh; padding-top: 0%; padding-bottom: 0%; cursor: pointer;">
+      
+      <!-- Social Media -->
+     
+      <div class="social ">
+        <a href="https://www.facebook.com/ronipas" class="fa fa-facebook"  ></a>
+        <a href="https://www.instagram.com/ronip_a/" class="fa fa-instagram "  ></a> 
+      </div>
+
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      <div class="collapse navbar-collapse" id="navbarNav"; style="text-align: center;">
+        <ul class="navbar-nav ms-auto "; style="letter-spacing: 3px ; ">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item ";>
+            <a class="nav-link" href="index.html#aboutme" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#myprojects" >Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <body>  
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Navbar Akhir -->
+ <div id="home">  
+  <section>
+    <div class="container ">
+        <p class="text-center " style="font-family:'Courier New', Courier, monospace; margin-top: 125px; margin-bottom:15px;
+        font-size:30px ">Robot Tank Penembak Otomatis <br>Menggunakan Sensor Warna</p>
+
+            <h2 class="tampilalma mb-5 mt-5" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+                Tampilan Robot
+            </h2>
+    <div class="row justify-content-center">
+        <div class=" col-md-6 mb-5" >
+
+            <img src="img/belakang.JPG " class="card-img-top"> 
+        
+        </div>
+
+        <div class=" col-md-6 mb-5" >
+
+    <img src="img/samping.JPG " class="card-img-top">
+
+</div>
+</div>
+<div class="row justify-content-center">
+<div class=" col-md-6 mb-5">
+
+    <img src="img/depan.JPG"  class="card-img-top"; style="height: 480px;">
+
+</div>
+
+
+<div class=" col-md-6 mb-5">
+
+    <img src="img/arena.PNG"  class="card-img-top" style="padding-top: 85px;">
+
+</div>
+</div>
+</div>
+</section>
+  
+         
+
+ 
+    
+        </body>
+    
+    
+
+    <section  style="background: linear-gradient(to bottom, #33ccff 0%, #fff 100%);">
+     
+      
+        <div id="contact">
+      <div class="container">
+        <div class="row text-center ">
+          <div class="col">
+            
+            <h2 mb-5; style=" margin-top:20px" >Contact Me</h2>
+          </div>
+        </div> 
+
+      
+
+        <div class="row justify-content-center" style="margin-bottom: 20px;">
+          <div class="col-md-6">
+            <form onsubmit="sendEmail(); reset(); return false">
+              <div class="mb-3">
+                <label for="Input Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="text" />
+                <div id="name" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="background-color: #164a9e;">Submit</button>
+             
+            <br>
+            <br>
+            </form>
+          </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+          Email.send({
+            Host : "smtp.gmail.com",
+            Username : "aryantoronip@gmail.com",
+            Password : "Rogar1997",
+            To : 'roniparyanto6@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Pemberitahuan dari Portfolio",
+            Body : "Name : " + document.getElementById("name").value
+                              + " <br> Email :" + document.getElementById("emailHelp").value 
+                              + "<br> Message " + document.getElementById("message").value
+        }).then(
+          message => alert("Message Sent Succesfully")
+        );
+      }
+        </script>
+      </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 width: 100%" style="background-color: #164a9e"  >
+      <p class="text-white justify-content-center p-3">Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/ronip_a/" class="text-white fw-bold">Ronip Aryanto</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+   
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+ 
+</html>
